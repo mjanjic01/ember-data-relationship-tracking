@@ -11,16 +11,18 @@ export default class ApplicationController extends Controller {
   constructor(...args) {
     super(...args);
 
+    // load identical data from public/api/mains/1.json
     this.mainModel = this.store.findRecord('main', '1');
   }
 
   get observed() {
-    console.log('rerendered');
+    console.log('recomputed');
     return this.mainModel.get('items');
   }
 
   @action
   pushPayload() {
+    // push data identical to public/api/mains/1.json
     this.store.pushPayload({
       data: [
         {
