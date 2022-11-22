@@ -1,5 +1,7 @@
-{{page-title "EmberDataRelationshipTracking"}}
+{{page-title "ember-data relationship tracking"}}
 
-<h2 id="title">Welcome to Ember</h2>
+{{#each this.observed as |item|}}
+  {{item.name}}
+{{/each}}
 
-{{outlet}}
+<button type="button" {{on "click" this.pushPayload}}>PUSH PAYLOAD</button>

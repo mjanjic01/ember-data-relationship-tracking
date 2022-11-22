@@ -1,0 +1,54 @@
+{
+  "data": {
+    "type": "main",
+    "id": "1",
+    "attributes": {}
+  },
+  "included": [
+    {
+      "type": "item",
+      "id": "1",
+      "attributes": {
+        "name": "Item 1"
+      },
+      "relationships": {
+        "main": {
+          "data": {
+            "id": "1",
+            "type": "main"
+          }
+        }
+      }
+    },
+    {
+      "type": "item",
+      "id": "2",
+      "attributes": {
+        "name": "Item 2"
+      },
+      "relationships": {
+        "main": {
+          "data": {
+            "id": "1",
+            "type": "main"
+          }
+        }
+      }
+    },
+    {
+      "type": "item",
+      "id": "3",
+      "attributes": {
+        "name": "Item 3"
+      },
+      "relationships": {
+        "main": {
+          "data": {
+            "id": "1",
+            "type": "main"
+          }
+        }
+      }
+    }
+  ]
+}
